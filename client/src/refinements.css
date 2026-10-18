@@ -1,0 +1,125 @@
+.summary {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.summary button {
+  text-align: left;
+  border: 1px solid #e4eae3;
+  border-radius: 12px;
+  background: #fff;
+  padding: 18px;
+}
+
+.summary button:hover {
+  background: #f3faf4;
+}
+
+.filters {
+  flex-wrap: wrap;
+}
+
+.filters select {
+  max-width: 180px;
+}
+
+.errorbox,
+.successbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.errorbox button,
+.successbox button {
+  flex-shrink: 0;
+  padding: 5px 8px;
+}
+
+.successbox {
+  background: #e7f5ea;
+  color: #27643e;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  font-size: 13px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 2px;
+  color: #69776e;
+  font-size: 12px;
+}
+
+.pagination button:disabled {
+  cursor: not-allowed;
+  opacity: .5;
+}
+
+.comment,
+.edit-form,
+.comment-form {
+  border-top: 1px solid #edf0ec;
+  padding: 14px 0;
+}
+
+.comment b,
+.comment small {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.comment small {
+  color: #89958d;
+  font-size: 10px;
+}
+
+.comment p {
+  white-space: pre-wrap;
+  font-size: 13px;
+  margin: 8px 0 0;
+}
+
+.comment-form textarea,
+.edit-form textarea,
+.edit-form input,
+.edit-form select,
+.comment-form textarea {
+  display: block;
+  width: 100%;
+}
+
+.comment-form textarea,
+.edit-form textarea {
+  min-height: 75px;
+}
+
+.comment-form button,
+.edit-form .actions {
+  margin-top: 10px;
+}
+
+.actions button:disabled,
+.modal button:disabled {
+  cursor: wait;
+  opacity: .65;
+}
+
+@media (max-width: 750px) {
+  .summary {
+    grid-template-columns: 1fr;
+  }
+
+  .summary button {
+    padding: 12px;
+  }
+
+  .filters select {
+    max-width: none;
+    flex: 1 1 42%;
+  }
+}

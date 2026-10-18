@@ -1,0 +1,1 @@
+{"name":"newtonite-server","type":"module","scripts":{"dev":"node --env-file-if-exists=.env --watch src/index.js","start":"node --env-file-if-exists=.env src/index.js","test":"node --env-file-if-exists=.env --test"},"dependencies":{"cors":"^2.8.5","express":"^4.21.2","jsonwebtoken":"^9.0.2","pg":"^8.13.1"},"devDependencies":{"supertest":"^7.0.0"}}
